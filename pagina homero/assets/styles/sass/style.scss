@@ -1,0 +1,74 @@
+/* Variables */
+$background: #78bbcb;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+
+* img {
+    width: 100%;
+    height: auto; }
+
+body{
+background-color: $background;
+font-family: 'Coming Soon', cursive;
+width: 100vh;
+height: 100vh;
+min-width: 100%;
+min-height: 100%;
+
+header{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+
+    .divColumn{
+        width: 200px;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+
+        .jesus{
+            width: 200px;
+            height: 500px;
+        }
+
+        div{
+            width: 75px;
+            height: 75px;
+            margin: 1em;
+
+            :hover{
+                transform: translateY(-20px);
+            }
+        }
+
+
+    }
+
+    .divColumn:nth-child(3){
+        animation-name: Yisus;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        position: relative;
+    }
+
+    @keyframes Yisus {
+       0%{left: -40px; top: -40px;}
+       25%{left: 40px; top: -40px;}
+       50%{left:40px; top: 40px;}
+       75%{left: -40px; top: 40px;}
+       100%{left: -40px; top: -40px; }
+    }
+
+}
+
+}
